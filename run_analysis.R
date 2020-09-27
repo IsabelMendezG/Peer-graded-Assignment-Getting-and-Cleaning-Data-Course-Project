@@ -61,8 +61,6 @@ FinalTidyDataset <- Tidy %>%
   group_by(subject, activity) %>%
   summarise_all(funs(mean))
 write.table(FinalTidyDataset, "FinalTidyDataset.txt", row.name=FALSE)
-
-# Final Stage
 str(FinalTidyDataset)
 
 
